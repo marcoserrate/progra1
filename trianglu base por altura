@@ -1,0 +1,23 @@
+// areatriangulo.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+
+using namespace std;
+
+{
+	float b,h,2,area;
+	cout<< " ingrese la base";
+	cin>>b;
+	cout<< "ingrese valor de altura";
+	cin>>h;
+	area= (b*h)/2;
+	cout<< "el area es:"<<area;
+	getch()
+
+}
+
+
