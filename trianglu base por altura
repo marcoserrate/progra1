@@ -7,16 +7,16 @@
 
 
 using namespace std;
-
+void main
 {
-	float b,h,2,area;
+	float b,h,area;
 	cout<< " ingrese la base";
 	cin>>b;
 	cout<< "ingrese valor de altura";
 	cin>>h;
 	area= (b*h)/2;
 	cout<< "el area es:"<<area;
-	getch()
+	getch();
 
 }
 
