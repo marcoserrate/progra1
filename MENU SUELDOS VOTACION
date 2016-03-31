@@ -1,0 +1,69 @@
+// sueldos.cpp : Defines the entry point for the console application.
+//
+
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#define IVA 0.13
+#define AFP 0.1271
+using namespace std;
+
+void main()
+{
+   int a, b, r, opcion;
+   cout << "            MENU " ;
+   
+  
+   do {
+     cout << endl;
+     cout << "1.- Salario" << endl;
+     cout << "2.- votacion" << endl;
+     cout << "3.- salir" << endl;
+     cout << "Elige una opción: " ;
+     cin >> opcion;
+     switch (opcion)
+
+	 
+	 
+
+	 
+	 {
+
+	 case 1:{int n,i;
+	float sb,sn;
+	cout<<"Ingrese numero de empleados: ";
+	cin>>n;
+
+	for (i=1;i<=n;i++)
+	{
+		cout<<"Ingrese salario bruto: ";
+		cin>>sb;
+		if (sb>=7000)
+			sn=sb-(IVA+AFP)*sb;
+		else 
+			sn=sb-(AFP*sb);
+		cout<<"El salario neto es: "<<sn <<endl;
+		
+	}
+	getch ();
+}
+	 case 2:{int edad; 
+		cout<< "ingrese edad: ";
+	cin>> edad;
+	if (edad >= 18 )
+		cout<<"puede votar";
+	else
+		cout<<"no puede votar";
+	getch();
+	
+	
+}
+	   
+		case 0: cout << "Salir";break;
+	    default: cout << "Opcion invalida" << endl;
+     }
+    
+	 } while (opcion != 0);
+     getch();
+}
