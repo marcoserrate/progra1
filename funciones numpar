@@ -1,0 +1,36 @@
+// funcuiones.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+ using namespace std;
+ bool num_par (int a);
+ void main ()
+{
+ bool z;
+ int numero;
+ cout<<"ingrese numero:";
+ cin>> numero;
+ z= num_par(numero);
+	 if (z)
+		 cout<<"es par";
+	 else
+		 cout<<" es impar";
+
+   getch();
+
+	 
+}
+ bool num_par(int a)
+ {
+
+	bool z;
+	if(a%2==0)
+		z=true;
+	else
+	z=false;
+	return z;
+ }
+
