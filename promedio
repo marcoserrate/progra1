@@ -1,0 +1,34 @@
+
+#include "stdafx.h"
+#include<iostream>
+#include"conio.h"
+
+using namespace std;
+void main()
+
+
+{
+	int a,b,c,promedio;
+
+	cout<<"ingresar a:";
+	cin>>a;
+    cout<<"ingresar b:";
+	cin>>b;
+	cout<<"ingresar c:";
+	cin>>c;
+	if (a<0 || a>10);
+	    cout<<"a esta fuera de rango";	
+		
+	if (b<0 || b>10);
+		cout<<"b esta fuera de rango";
+	
+	
+	if (c<0 || c>10)
+		cout<<"c esta fuera de rango";
+	if((a>=0 && a<=10) && (b>=0 && b<=10) && (c>=0 && c<=10))
+ {promedio=(a+b+c)/3;
+	cout<<promedio;
+	}
+	getch();
+}
+
