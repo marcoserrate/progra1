@@ -1,0 +1,85 @@
+// funciones.cpp : Defines the entry point for the console application.
+//MARCO SERRATE
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "stdlib.h"
+
+using namespace std;
+float fsuma(float a,float b);//prototipo funcion
+float fresta(float a,float b);
+float fmultip(float a,float b);
+float fdivis(float a,float b);
+void main()
+
+{
+	float a,b,suma,resta,multip,divis;
+	int opcion;
+	//validacion de entrada
+	do{
+	cout<<"Ingresar a: ";
+	cin>>a;
+	}while(a<=0);
+	do{
+		cout<<"Ingresar b: ";
+	cin>>b;
+	}
+	while(b<=0);
+		
+	do{
+		cout<<"              MENU  "<<endl;
+		cout<<"1.-suma"<<endl;
+		cout<<"2.-resta"<<endl;
+		cout<<"3.-multiplicaion"<<endl;
+	    cout<<"3.-division"<<endl;
+		cout<<"4.-division"<<endl;
+	    cout<<"0.-SALIR"<<endl;
+		cout<<"INGRESE UNA OPCION:"<<endl;
+		cin>>opcion;
+
+
+		 switch(opcion){
+
+		case 1: suma=fsuma(a,b);
+			cout<<"la suma es : "<<suma;
+			break;
+		case 2: resta=fresta(a,b);
+			cout<<"la resta es :"<<resta;
+			break;
+		case 3: multip=fmultip(a,b);
+			cout<<"LA MULTIPLICACION ES:  "<<multip;
+			break;
+		case 4: divis=fdivis(a,b);
+			cout<<"La division es: "<<divis;
+			break;
+		case 0: cout<<"salir" ;
+					break;
+		default: cout<<"opcion invalida"<<endl;}
+	system("cls");	
+	}while(opcion!=0);
+	getch();
+	
+}
+float fsuma(float a,float b)
+{float r;
+
+	r=a+b;
+	return r;
+}
+float fresta(float a,float b)
+{
+	float r;
+	r=a-b;
+	return r;
+}
+float fmultip(float a,float b)
+{  float r;
+r=a*b;
+return r;
+}
+float fdivis(float a,float b)
+{ float r;
+r=a/b;
+return r;
+}
