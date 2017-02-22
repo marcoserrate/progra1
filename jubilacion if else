@@ -1,0 +1,30 @@
+// algori.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include"conio.h"
+
+using namespace std;
+void main()
+{
+	int edad,gen,n;
+		cout<<"Ingrese edad: ";
+	cin>>edad;
+		cout<<"ingrese genero 1 para masculino ,2para femenino  :_ ";
+	cin>>gen;
+	if(gen==1)
+		if(edad<=65)
+			cout<<"Se puede jubilar ..";
+		else
+			cout<<"No se puede jubilar";
+	else
+    cout<<"ingrese numero de hijos: ";
+	cin>>n;
+	if(edad<=(60+n))
+		cout<<"Puede jubilarse";
+	else
+		cout<<"No puede jubilarse:";
+	getch();
+}
+
