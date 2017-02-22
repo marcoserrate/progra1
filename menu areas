@@ -1,0 +1,46 @@
+// algori.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include"conio.h"
+
+using namespace std;
+void main()
+{
+	int opcion,at,ar,ac,base,altura,area,lado;
+	cout<<"         Menu   "<<endl;
+	cout<<"1:Area triangulo"<<endl;
+	cout<<"2.-Area rectangulo"<<endl;
+	cout<<"3.-area cuadrado"<<endl;
+	cout<<"0.-salir"<<endl;
+		cin>>opcion;
+		switch(opcion){
+			case 1: cout<<"INGRESE BASE";
+		cin>>base;
+		cout<<"Ingrese altura";
+		cin>>altura;
+		area=(base*altura);
+		cout<<area;
+		break;
+			case 2: cout<<"ingrese base:";
+				  cin>>base;
+				 cout<<"Ingrese altura";
+				 cin>>altura;
+				 area=base*altura;
+				 cout<<area;
+				break;
+			case 3: cout<<"INGRESE LADO:";
+				 cin>>lado;
+			    area=lado*lado;
+				break;
+			case 0: cout<<"salir";
+				break;
+		
+				default: (opcion!=0);
+					cout<<"error";
+		}
+		getch();
+	
+}
+
