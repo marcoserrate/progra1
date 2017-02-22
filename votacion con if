@@ -11,7 +11,7 @@ void main()
 	int edad;
 		cout<<"ingrese su edad: ";
 	cin>>edad;
-	if(edad>18)
+	if(edad>=18)
 		cout<<"puede votar.";
 	getch();
 }
